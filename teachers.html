@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers - NatMin EDU</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Lora Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Boxicons CDN-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-slate-100">
+
+    <!-- Nav Bar -->
+    <nav class="relative container p-6 mx-auto">
+        <div class="flex justify-between items-center">
+            <a href="index.html"><img class=" w-20 md:w-24" src="./img/logo.png" alt=""></a>
+            <div class="hidden md:flex space-x-6">
+                <a class="font-bold text-sm text-gray-500 hover:text-color1" href="index.html">Home</a>
+                <a class="font-bold text-sm text-gray-500" href="courses.html">Courses</a>
+                <a class="font-bold text-sm text-black hover:text-color1" href="teachers.html">Teachers</a>
+                <a class="font-bold text-sm text-gray-500 hover:text-color1" href="articles.html">Articles</a>
+                <a class="font-bold text-sm text-gray-500 hover:text-color1" href="about.html">About</a>
+            </div>
+            <a class="hidden md:block px-6 py-3 rounded-full bg-color1 text-xs text-white hover:bg-colorhover1 "
+                href="signin.html">Get Started</a>
+            <div id="menu" class="md:hidden cursor-pointer">
+                <i class='bx bx-menu text-2xl'></i>
+            </div>
+            <div id="menu-items" class="hidden absolute h-screen py-3 top-0 right-0 flex-col space-y-3 bg-color1 z-40">
+                <div class="flex justify-end pr-2">
+                    <i id="x-button" class='bx bx-x text-2xl cursor-pointer'></i>
+                </div>
+                <div class="flex flex-col space-y-3 pl-6 pr-20">
+                    <a href="index.html" class="text-md border-b border-b-gray-200 text-gray-700 font-medium">Home</a>
+                    <a href="courses.html"
+                        class="text-md border-b border-b-gray-200 text-gray-700 font-medium">Courses</a>
+                    <a href="teachers.html"
+                        class="text-md border-b border-b-gray-200 text-gray-700 font-medium">Teachers</a>
+                    <a href="articles.html"
+                        class="text-md border-b border-b-gray-200 text-gray-700 font-medium">Articles</a>
+                    <a href="about.html" class="text-md border-b border-b-gray-200 text-gray-700 font-medium">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Heading Title -->
+    <section id="certified">
+        <div
+            class="container mx-auto flex flex-col items-center space-y-5 justify-center p-6 md:flex-row md:space-x-20">
+            <div class="pt-4 relative md:w-1/2 flex ">
+                <h1 class="text-3xl text-center text-black font-semibold md:text-4xl">Professional and Qualified
+                    Teachers</h1>
+            </div>
+            <div class="flex justify-center items-center md:px-14 md:w-1/2">
+                <p class="text-gray-800 text-sm font-normal text-center">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Voluptas, animi debitis omnis sapiente voluptatem saepe odit enim minus quam aut.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers  -->
+    <section id="teachers-main">
+        <div class="container mx-auto grid grid-cols-1 p-6 md:grid-cols-2 lg:grid-cols-3">
+
+            <div id="teacher"
+                class="rotate-6 cursor-pointer mb-28 justify-self-center w-5/6 relative h-56 border-2 border-black transition duration-200 hover:rotate-0 md:mb-32">
+                <div class="w-full absolute bottom-2 right-2 h-full overflow-hidden duration-200 bg-slate-500">
+                    <img id="ti" src="./img/th1.jpg" alt=""
+                        class="w-full h-full transition duration-200 object-cover md:grayscale hover:grayscale-0">
+                </div>
+                <div class="absolute -bottom-10 w-full">
+                    <p class="text-md text-center text-color2 font-semibold">Jason Curry</p>
+                </div>
+            </div>
+
+            <div id="teacher"
+                class="-rotate-6 cursor-pointer mb-28 justify-self-center w-5/6 relative h-56 border-2 border-black transition duration-200 hover:rotate-0 md:mb-32">
+                <div class="w-full absolute bottom-2 right-2 h-full overflow-hidden duration-200 bg-slate-500">
+                    <img id="ti" src="./img/th2.jpg" alt=""
+                        class="w-full h-full transition duration-200 object-cover md:grayscale hover:grayscale-0 md:mb-32">
+                </div>
+                <div class="absolute -bottom-10 w-full">
+                    <p class="text-md text-center text-color2 font-semibold">Arya Swift</p>
+                </div>
+            </div>
+
+            <div id="teacher"
+                class="rotate-6 cursor-pointer mb-28 justify-self-center w-5/6 relative h-56 border-2 border-black transition duration-200 hover:rotate-0 md:mb-32">
+                <div class="w-full absolute bottom-2 right-2 h-full overflow-hidden duration-200 bg-slate-500">
+                    <img id="ti" src="./img/th3.jpg" alt=""
+                        class="w-full h-full transition duration-200 object-cover md:grayscale hover:grayscale-0">
+                </div>
+                <div class="absolute -bottom-10 w-full">
+                    <p class="text-md text-center text-color2 font-semibold">Alex Cruz</p>
+                </div>
+            </div>
+
+            <div id="teacher"
+                class="-rotate-6 cursor-pointer mb-28 justify-self-center w-5/6 relative h-56 border-2 border-black transition duration-200 hover:rotate-0 md:mb-32">
+                <div class="w-full absolute bottom-2 right-2 h-full overflow-hidden duration-200 bg-slate-500">
+                    <img id="ti" src="./img/th4.jpg" alt=""
+                        class="w-full h-full transition duration-200 object-cover md:grayscale hover:grayscale-0">
+                </div>
+                <div class="absolute -bottom-10 w-full">
+                    <p class="text-md text-center text-color2 font-semibold">Tony Mich</p>
+                </div>
+            </div>
+
+            <div id="teacher"
+                class="rotate-6 cursor-pointer mb-28 justify-self-center w-5/6 relative h-56 border-2 border-black transition duration-200 hover:rotate-0 md:mb-32">
+                <div class="w-full absolute bottom-2 right-2 h-full overflow-hidden duration-200 bg-slate-500">
+                    <img id="ti" src="./img/th5.jpg" alt=""
+                        class="w-full h-full transition duration-200 object-cover md:grayscale hover:grayscale-0">
+                </div>
+                <div class="absolute -bottom-10 w-full">
+                    <p class="text-md text-center text-color2 font-semibold">Tom Warren</p>
+                </div>
+            </div>
+
+            <div id="teacher"
+                class="-rotate-6 cursor-pointer mb-28 justify-self-center w-5/6 relative h-56 border-2 border-black transition duration-200 hover:rotate-0 md:mb-32">
+                <div class="w-full absolute bottom-2 right-2 h-full overflow-hidden duration-200 bg-slate-500">
+                    <img id="ti" src="./img/th6.jpg" alt=""
+                        class="w-full h-full transition duration-200 object-cover md:grayscale hover:grayscale-0">
+                </div>
+                <div class="absolute -bottom-10 w-full">
+                    <p class="text-md text-center text-color2 font-semibold">Sansa Stark</p>
+                </div>
+            </div>
+
+            <div id="teacher"
+                class="rotate-6 cursor-pointer mb-28 justify-self-center w-5/6 relative h-56 border-2 border-black transition duration-200 hover:rotate-0 md:mb-32">
+                <div class="w-full absolute bottom-2 right-2 h-full overflow-hidden duration-200 bg-slate-500">
+                    <img id="ti" src="./img/th7.jpg" alt=""
+                        class="w-full h-full transition duration-200 object-cover md:grayscale hover:grayscale-0">
+                </div>
+                <div class="absolute -bottom-10 w-full">
+                    <p class="text-md text-center text-color2 font-semibold">Richard Gates</p>
+                </div>
+            </div>
+
+            <div id="teacher"
+                class="-rotate-6 cursor-pointer mb-28 justify-self-center w-5/6 relative h-56 border-2 border-black transition duration-200 hover:rotate-0 md:mb-32">
+                <div class="w-full absolute bottom-2 right-2 h-full overflow-hidden duration-200 bg-slate-500">
+                    <img id="ti" src="./img/th8.jpg" alt=""
+                        class="w-full h-full transition duration-200 object-cover md:grayscale hover:grayscale-0">
+                </div>
+                <div class="absolute -bottom-10 w-full">
+                    <p class="text-md text-center text-color2 font-semibold">Kris Maine</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative w-full pt-40 pb-16 bg-black md:pl-80">
+        <div
+            class="hidden w-4/6 p-10 rounded-lg justify-between bg-color1 absolute -top-16 left-1/2 -translate-x-1/2 md:flex ">
+            <div class="flex flex-col space-y-3">
+                <h1 class="text-2xl text-white font-bold">Ready to get Started</h1>
+                <p class="text-sm text-gray-300 font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <a href="signin.html"
+                class="rounded-md text-sm text-gray-600 font-medium cursor-pointer w-fit p-3 self-center bg-gray-100 hover:bg-gray-300">
+                Get Started
+            </a>
+        </div>
+        <div
+            class="absolute rounded-md top-16 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center md:top-28 md:left-28 md:translate-x-0 p-3">
+            <img class="w-16" src="./img/logo.png" alt="">
+            <p class="text-xs text-gray-400 font-normal md:text-sm">Coyright @2023 NatMin</p>
+        </div>
+        <div class="relative grid grid-cols-2 md:grid-cols-4">
+            <div class="flex flex-col items-end pr-10 md:items-start">
+                <h1 class="text-xl font-semibold text-white mb-2">About</h1>
+                <p class="text-sm cursor-pointer text-gray-400">Contact Us</p>
+                <p class="text-sm cursor-pointer text-gray-400">About Us</p>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="text-xl font-semibold text-white mb-2">Quick Links</h1>
+                <p class="text-sm cursor-pointer text-gray-400">Facebook</p>
+                <p class="text-sm cursor-pointer text-gray-400">Twitter</p>
+                <p class="text-sm cursor-pointer text-gray-400">Instagram</p>
+                <p class="text-sm cursor-pointer text-gray-400">Linkedin</p>
+                <p class="text-sm cursor-pointer text-gray-400">Pinterest</p>
+            </div>
+            <div class="flex flex-col pr-10 items-end md:items-start">
+                <h1 class="text-xl font-semibold text-white mb-2">Our Service</h1>
+                <p class="text-sm cursor-pointer text-gray-400">HTML</p>
+                <p class="text-sm cursor-pointer text-gray-400">CSS</p>
+                <p class="text-sm cursor-pointer text-gray-400">TAILWIND</p>
+                <p class="text-sm cursor-pointer text-gray-400">C++</p>
+                <p class="text-sm cursor-pointer text-gray-400">OTHERS</p>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="text-xl font-semibold text-white mb-2">Policy</h1>
+                <p class="text-sm cursor-pointer text-gray-400">Return Policy</p>
+                <p class="text-sm cursor-pointer text-gray-400">Terms of use</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NatMin EDU</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css ">
+
+    <!-- Lora Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Boxicons CDN-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body class="">
+
+    <div class="w-full h-fit bg-[url('./img/bg.png')] bg-cover">
+        <!-- Nav Bar -->
+        <nav class="relative container p-6 mx-auto">
+            <div class="flex justify-between items-center">
+                <a href="index.html"><img class=" w-20 md:w-24" src="./img/logo.png" alt=""></a>
+                <div class="hidden md:flex space-x-6">
+                    <a class="font-bold text-sm text-gray-900 hover:text-color1" href="index.html">Home</a>
+                    <a class="font-bold text-sm text-gray-500 hover:text-color1" href="courses.html">Courses</a>
+                    <a class="font-bold text-sm text-gray-500 hover:text-color1" href="teachers.html">Teachers</a>
+                    <a class="font-bold text-sm text-gray-500 hover:text-color1" href="articles.html">Articles</a>
+                    <a class="font-bold text-sm text-gray-500 hover:text-color1" href="about.html">About</a>
+                </div>
+                <a class="hidden md:block px-6 py-3 rounded-full bg-color1 text-xs text-white hover:bg-colorhover1 "
+                    href="signin.html">Get Started</a>
+                <div id="menu" class="md:hidden cursor-pointer">
+                    <i class='bx bx-menu text-2xl'></i>
+                </div>
+                <div id="menu-items" class="hidden absolute h-screen py-3 top-0 right-0 flex-col space-y-3 bg-color1">
+                    <div class="flex justify-end pr-2">
+                        <i id="x-button" class='bx bx-x text-2xl cursor-pointer'></i>
+                    </div>
+                    <div class="flex flex-col space-y-3 pl-6 pr-20">
+                        <a href="index.html"
+                            class="text-md border-b border-b-gray-200 text-gray-700 font-medium">Home</a>
+                        <a href="courses.html"
+                            class="text-md border-b border-b-gray-200 text-gray-700 font-medium">Courses</a>
+                        <a href="teachers.html"
+                            class="text-md border-b border-b-gray-200 text-gray-700 font-medium">Teachers</a>
+                        <a href="articles.html"
+                            class="text-md border-b border-b-gray-200 text-gray-700 font-medium">Articles</a>
+                        <a href="about.html"
+                            class="text-md border-b border-b-gray-200 text-gray-700 font-medium">About</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- First Section -->
+        <section id="main">
+            <div class="container flex mx-auto justify-center pt-10">
+
+                <div class=" flex flex-col items-center w-4/5 md:w-3/5 space-y-8">
+                    <div class="w-full p-0">
+                        <h1 class="text-3xl font-bold text-center md:text-5xl">Our only concern is your education</h1>
+                    </div>
+
+                    <!-- Search Bar -->
+                    <div class="hidden md:flex rounded-lg bg-gray-200 w-3/5">
+                        <div class="flex p-2 items-center w-full">
+                            <div class="flex items-center w-1/12">
+                                <i class='bx bx-search text-gray-400'></i>
+                            </div>
+                            <input
+                                class="focus:outline-none px-2 bg-transparent text-sm w-full placeholder-shown:text-md font-medium"
+                                type="search" placeholder="Find Courses...">
+                        </div>
+                        <button
+                            class="py-4 px-3 bg-color2 text-sm rounded-r-lg text-white hover:bg-colorhover2">Search</button>
+                    </div>
+
+                    <img class="h-3/6" src="./img/main-logo.png" alt="">
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!--Build-->
+    <section id="build" class="w-full h-fit bg-[url('./img/bg2.png')] bg-cover">
+        <div class="container p-6 flex justify-center items-center mx-auto md:h-screen md:py-12">
+
+            <div class="hidden w-3/6 justify-center items-center h-full md:flex">
+                <img src="./img/build-bg.png" alt="" class="w-4/6">
+            </div>
+            <!-- right-content -->
+            <div class="flex flex-col space-y-8 md:w-3/6 md:p-20">
+                <h1 class="text-2xl font-semibold md:text-4xl">Build personalized student experience</h1>
+                <p class="text-sm font-normal text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ducimus minus
+                    magni, quidem aut consectetur in necessitatibus magnam. Animi adipisci perferendis iste repellat ab.
+                    Veritatis vel iusto et consectetur animi dolore.
+                </p>
+                <a class="w-fit px-6 py-3 rounded-full bg-color1 text-xs text-white hover:bg-colorhover1 "
+                    href="signin.html">Get
+                    Started</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="w-full bg-[url('./img/bg3.png')] bg-cover">
+        <div class="container p-2 mx-auto h-72 relative flex flex-col justify-center">
+            <!-- Slider main container -->
+            <div class="swiper swiper1">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="icon-div"><i class='bx bxl-html5'></i></div>
+                        <div class="cs-dis">
+                            <h2>HTML</h2>
+                            <p>Best teaching, all guidline in one course</p>
+                        </div>
+                        <div class="r-arrow">
+                            <i class='bx bx-right-arrow-alt bx-tada'></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="icon-div"><i class='bx bxl-css3'></i></div>
+                        <div class="cs-dis">
+                            <h2>CSS</h2>
+                            <p>Best teaching, all guidline in one course</p>
+                        </div>
+                        <div class="r-arrow">
+                            <i class='bx bx-right-arrow-alt bx-tada'></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="icon-div"><i class='bx bxl-javascript'></i></div>
+                        <div class="cs-dis">
+                            <h2>Javascript</h2>
+                            <p>Best teaching, all guidline in one course</p>
+                        </div>
+                        <div class="r-arrow">
+                            <i class='bx bx-right-arrow-alt bx-tada'></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="icon-div"><i class='bx bxl-tailwind-css'></i></div>
+                        <div class="cs-dis">
+                            <h2>Tailwind CSS</h2>
+                            <p>Best teaching, all guidline in one course</p>
+                        </div>
+                        <div class="r-arrow">
+                            <i class='bx bx-right-arrow-alt bx-tada'></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="icon-div"><i class='bx bxl-java'></i></div>
+                        <div class="cs-dis">
+                            <h2>Java</h2>
+                            <p>Best teaching, all guidline in one course</p>
+                        </div>
+                        <div class="r-arrow">
+                            <i class='bx bx-right-arrow-alt bx-tada'></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="icon-div"><i class='bx bxl-bootstrap'></i></div>
+                        <div class="cs-dis">
+                            <h2>Bootstrap</h2>
+                            <p>Best teaching, all guidline in one course</p>
+                        </div>
+                        <div class="r-arrow">
+                            <i class='bx bx-right-arrow-alt bx-tada'></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="icon-div"><i class='bx bxl-c-plus-plus'></i></div>
+                        <div class="cs-dis">
+                            <h2>C++</h2>
+                            <p>Best teaching, all guidline in one course</p>
+                        </div>
+                        <div class="r-arrow">
+                            <i class='bx bx-right-arrow-alt bx-tada'></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="icon-div"><i class='bx bxl-python'></i></i></div>
+                        <div class="cs-dis">
+                            <h2>Python</h2>
+                            <p>Best teaching, all guidline in one course</p>
+                        </div>
+                        <div class="r-arrow">
+                            <i class='bx bx-right-arrow-alt bx-tada'></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Navigation arrow -->
+            <div class="flex justify-center space-x-5">
+                <div class="swiper-button-prev-uni">
+                    <i class='bx bxs-left-arrow text-lg align-middle text-color1'></i>
+                </div>
+                <div class="swiper-button-next-uni">
+                    <i class='bx bxs-right-arrow align-middle text-lg text-color1'></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms courses-->
+    <section id="platforms" class="w-full bg-[url('./img/bg.png')] bg-cover">
+        <div class="container flex justify-center mx-auto p-2 md:p-3 md:h-screen">
+            <!-- left section-->
+            <div class="flex flex-col justify-center pl-6 py-5 space-y-3  md:w-3/6 md:pl-28">
+                <h1 class="text-2xl font-semibold md:text-4xl">Platform that offer learning courses</h1>
+                <p class="text-sm font-normal text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sint earum est voluptate repellendus animi, dolorem quia impedit in!
+                </p>
+                <div class="grid grid-cols-2">
+                    <div class="flex p-2 items-center space-x-1 md:space-x-2">
+                        <i class='bx bx-play-circle bx-flip-vertical text-xl text-color2'></i>
+                        <p class="text-gray-400 text-lg text-center md:text-xl">500 + Courses</p>
+                    </div>
+                    <div class="flex p-2 items-center space-x-1 md:space-x-2">
+                        <i class='bx bxs-videos text-xl text-color2'></i>
+                        <p class="text-gray-400 text-lg text-center md:text-xl">100+ Free videos</p>
+                    </div>
+                    <div class="flex p-2 items-center space-x-1 md:space-x-2">
+                        <i class='bx bx-note text-xl text-color2'></i>
+                        <p class="text-gray-400 text-lg text-center md:text-xl">8k+ Lessons</p>
+                    </div>
+                    <div class="flex p-2 items-center space-x-1 md:space-x-2">
+                        <i class='bx bx-male-female text-xl text-color2'></i>
+                        <p class="text-gray-400 text-lg text-center md:text-xl">Expert Teachers</p>
+                    </div>
+                </div>
+                <a class="w-fit px-6 py-3 rounded-full bg-color2 text-xs text-white hover:bg-colorhover2 "
+                    href="signin.html">Get
+                    Started</a>
+            </div>
+            <div class="hidden relative w-3/6 justify-center items-center h-full md:flex">
+                <img src="./img/platform-img.png" alt="" class="w-4/6">
+                <div class="absolute left-8 top-52 flex items-center p-2 shadow-lg bg-slate-200 rounded-sm">
+                    <i class='bx bxl-youtube text-md text-red-500'></i>
+                    <p class="text-sm font-normal text-gray-500">
+                        100+ Free videos
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Teachers -->
+    <section id="best-teachers" class="w-full bg-[url('./img/bg4.png')] bg-cover">
+        <div
+            class="container relative flex flex-col justify-center items-center mx-auto px-2 py-5 space-y-8 md:py-16 md:px-6">
+            <h1 class="text-2xl font-medium text-gray-500">Our Best Teachers</h1>
+
+            <div class="swiper swiper2 p-2 md:p-6 w-4/5 mb-7">
+                <div class="swiper-wrapper w-full ">
+                    <!-- Slides -->
+                    <div class="swiper-slide flex flex-col justify-center items-center p-4 h-32 w-1/4 shadow-lg">
+                        <img src="./img/t1-modified.png" alt="" class="w-16 mb-3">
+                        <h2 class="text-md font-medium text-gray-600 mb-0">Jason Matt</h2>
+                        <h3 class="text-xs font-medium text-gray-500 mb-2">HTML</h3>
+                        <p class="text-sm text-gray-400 text-center mb-2">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Aliquam, ut quod.</p>
+                        <div class="flex space-x-2 justify-center">
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex flex-col justify-center items-center p-4 h-32 w-1/4 shadow-lg">
+                        <img src="./img/t2-modified.png" alt="" class="w-16 mb-3">
+                        <h2 class="text-md font-medium text-gray-600 mb-0">Alex Cruz</h2>
+                        <h3 class="text-xs font-medium text-gray-500 mb-2">CSS</h3>
+                        <p class="text-sm text-gray-400 text-center mb-2">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Aliquam, ut quod.</p>
+                        <div class="flex space-x-2 justify-center">
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex flex-col justify-center items-center p-4 h-32 w-1/4 shadow-lg">
+                        <img src="./img/t3-modified.png" alt="" class="w-16 mb-3">
+                        <h2 class="text-md font-medium text-gray-600 mb-0">Tony Mich</h2>
+                        <h3 class="text-xs font-medium text-gray-500 mb-2">Tailwind CSS</h3>
+                        <p class="text-sm text-gray-400 text-center mb-2">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Aliquam, ut quod.</p>
+                        <div class="flex space-x-2 justify-center">
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex flex-col justify-center items-center p-4 h-32 w-1/4 shadow-lg">
+                        <img src="./img/t4-modified.png" alt="" class="w-16 mb-3">
+                        <h2 class="text-md font-medium text-gray-600 mb-0">Jason Curry</h2>
+                        <h3 class="text-xs font-medium text-gray-500 mb-2">HTML</h3>
+                        <p class="text-sm text-gray-400 text-center mb-2">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Aliquam, ut quod.</p>
+                        <div class="flex space-x-2 justify-center">
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex flex-col justify-center items-center p-4 h-32 w-1/4 shadow-lg">
+                        <img src="./img/t5-modified.png" alt="" class="w-16 mb-3">
+                        <h2 class="text-md font-medium text-gray-600 mb-0">Sansa Stark</h2>
+                        <h3 class="text-xs font-medium text-gray-500 mb-2">HTML</h3>
+                        <p class="text-sm text-gray-400 text-center mb-2">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Aliquam, ut quod.</p>
+                        <div class="flex space-x-2 justify-center">
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex flex-col justify-center items-center p-4 h-32 w-1/4 shadow-lg">
+                        <img src="./img/t6-modified.png" alt="" class="w-16 mb-3">
+                        <h2 class="text-md font-medium text-gray-600 mb-0">Arya Swift</h2>
+                        <h3 class="text-xs font-medium text-gray-500 mb-2">HTML</h3>
+                        <p class="text-sm text-gray-400 text-center mb-2">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Aliquam, ut quod.</p>
+                        <div class="flex space-x-2 justify-center">
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex flex-col justify-center items-center p-4 h-32 w-1/4 shadow-lg">
+                        <img src="./img/t7-modified.png" alt="" class="w-16 mb-3">
+                        <h2 class="text-md font-medium text-gray-600 mb-0">Rob Lane</h2>
+                        <h3 class="text-xs font-medium text-gray-500 mb-2">HTML</h3>
+                        <p class="text-sm text-gray-400 text-center mb-2">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Aliquam, ut quod.</p>
+                        <div class="flex space-x-2 justify-center">
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex flex-col justify-center items-center p-4 h-32 w-1/4 shadow-lg">
+                        <img src="./img/t8-modified.png" alt="" class="w-16 mb-3">
+                        <h2 class="text-md font-medium text-gray-600 mb-0">Tom Warren</h2>
+                        <h3 class="text-xs font-medium text-gray-500 mb-2">HTML</h3>
+                        <p class="text-sm text-gray-400 text-center mb-2">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Aliquam, ut quod.</p>
+                        <div class="flex space-x-2 justify-center">
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                            <i class='bx bxs-star text-yellow-500 text-sm'></i>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev-uni2 absolute top-1/2 left-4 md:left-10">
+                <i class='bx bx-left-arrow-circle text-2xl'></i>
+            </div>
+            <div class="swiper-button-next-uni2 absolute top-1/2 right-4 md:right-10">
+                <i class='bx bx-right-arrow-circle text-2xl'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- connect -->
+    <section id="connect" class="w-full bg-[url('./img/bg2.png')] bg-cover">
+        <div class="container p-6 flex justify-center items-center mx-auto md:h-screen md:pb-16">
+
+            <div class="hidden w-3/6 justify-end items-center h-full md:flex">
+                <img src="./img/connect.png" alt="" class="w-5/6">
+            </div>
+            <!-- right-content -->
+            <div class="flex flex-col justify-center items-center space-y-6 md:w-3/6 md:pt-10 md:pl-5 md:pr-24">
+                <h1 class="text-2xl font-semibold md:text-4xl">Connect All your Task in One App</h1>
+                <p class="text-sm font-normal text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum eius accusamus fugit consequuntur quae illum?
+                </p>
+                <div class="flex flex-col justify-center items-center space-y-5 md:space-y-0 md:space-x-2 md:flex-row">
+                    <div class="flex w-fit p-3 bg-color1 rounded-xl cursor-pointer">
+                        <i class='bx bxl-apple text-2xl'></i>
+                        <p class="text-sm font-medium md:text-md">Download the app Store</p>
+                    </div>
+                    <div class="flex w-fit items-center p-3 bg-color2 rounded-xl cursor-pointer">
+                        <i class='bx bxl-play-store text-2xl'></i>
+                        <p class="text-sm font-medium md:text-md">Google Play</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="relative w-full pt-40 pb-16 bg-black md:pl-80">
+        <div
+            class="hidden w-4/6 p-10 rounded-lg justify-between bg-color1 absolute -top-16 left-1/2 -translate-x-1/2 md:flex ">
+            <div class="flex flex-col space-y-3">
+                <h1 class="text-2xl text-white font-bold">Ready to get Started</h1>
+                <p class="text-sm text-gray-300 font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <a href="signin.html"
+                class="rounded-md text-sm text-gray-600 font-medium cursor-pointer w-fit p-3 self-center bg-gray-100 hover:bg-gray-300">
+                Get Started
+            </a>
+        </div>
+        <div
+            class="absolute rounded-md top-16 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center md:top-28 md:left-28 md:translate-x-0 p-3">
+            <img class="w-16" src="./img/logo.png" alt="">
+            <p class="text-xs text-gray-400 font-normal md:text-sm">Coyright @2023 NatMin</p>
+        </div>
+        <div class="relative grid grid-cols-2 md:grid-cols-4">
+            <div class="flex flex-col items-end pr-10 md:items-start">
+                <h1 class="text-xl font-semibold text-white mb-2">About</h1>
+                <p class="text-sm cursor-pointer text-gray-400">Contact Us</p>
+                <p class="text-sm cursor-pointer text-gray-400">About Us</p>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="text-xl font-semibold text-white mb-2">Quick Links</h1>
+                <p class="text-sm cursor-pointer text-gray-400">Facebook</p>
+                <p class="text-sm cursor-pointer text-gray-400">Twitter</p>
+                <p class="text-sm cursor-pointer text-gray-400">Instagram</p>
+                <p class="text-sm cursor-pointer text-gray-400">Linkedin</p>
+                <p class="text-sm cursor-pointer text-gray-400">Pinterest</p>
+            </div>
+            <div class="flex flex-col pr-10 items-end md:items-start">
+                <h1 class="text-xl font-semibold text-white mb-2">Our Service</h1>
+                <p class="text-sm cursor-pointer text-gray-400">HTML</p>
+                <p class="text-sm cursor-pointer text-gray-400">CSS</p>
+                <p class="text-sm cursor-pointer text-gray-400">TAILWIND</p>
+                <p class="text-sm cursor-pointer text-gray-400">C++</p>
+                <p class="text-sm cursor-pointer text-gray-400">OTHERS</p>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="text-xl font-semibold text-white mb-2">Policy</h1>
+                <p class="text-sm cursor-pointer text-gray-400">Return Policy</p>
+                <p class="text-sm cursor-pointer text-gray-400">Terms of use</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

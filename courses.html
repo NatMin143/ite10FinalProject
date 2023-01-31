@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - NatMin EDU</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Lora Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Boxicons CDN-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-slate-100">
+
+    <!-- Nav Bar -->
+    <nav class="relative container p-6 mx-auto">
+        <div class="flex justify-between items-center">
+            <a href="index.html"><img class=" w-20 md:w-24" src="./img/logo.png" alt=""></a>
+            <div class="hidden md:flex space-x-6">
+                <a class="font-bold text-sm text-gray-500 hover:text-color1" href="index.html">Home</a>
+                <a class="font-bold text-sm text-black" href="courses.html">Courses</a>
+                <a class="font-bold text-sm text-gray-500 hover:text-color1" href="teachers.html">Teachers</a>
+                <a class="font-bold text-sm text-gray-500 hover:text-color1" href="articles.html">Articles</a>
+                <a class="font-bold text-sm text-gray-500 hover:text-color1" href="about.html">About</a>
+            </div>
+            <a class="hidden md:block px-6 py-3 rounded-full bg-color1 text-xs text-white hover:bg-colorhover1 "
+                href="signin.html">Get Started</a>
+            <div id="menu" class="md:hidden cursor-pointer">
+                <i class='bx bx-menu text-2xl'></i>
+            </div>
+            <div id="menu-items" class="hidden absolute h-screen py-3 top-0 right-0 flex-col space-y-3 bg-color1 z-40">
+                <div class="flex justify-end pr-2">
+                    <i id="x-button" class='bx bx-x text-2xl cursor-pointer'></i>
+                </div>
+                <div class="flex flex-col space-y-3 pl-6 pr-20">
+                    <a href="index.html" class="text-md border-b border-b-gray-200 text-gray-700 font-medium">Home</a>
+                    <a href="courses.html"
+                        class="text-md border-b border-b-gray-200 text-gray-700 font-medium">Courses</a>
+                    <a href="teachers.html"
+                        class="text-md border-b border-b-gray-200 text-gray-700 font-medium">Teachers</a>
+                    <a href="articles.html"
+                        class="text-md border-b border-b-gray-200 text-gray-700 font-medium">Articles</a>
+                    <a href="about.html" class="text-md border-b border-b-gray-200 text-gray-700 font-medium">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nav Bar2-->
+    <section id="navigation2">
+        <div class="container mx-auto px-4 justify-center flex flex-col space-y-6 md:p-6">
+            <div class="flex w-full justify-between items-center">
+                <h1 class="text-2xl font-semibold text-gray-600 md:text-4xl">Courses</h1>
+                <div class="hidden space-x-5 items-center md:flex">
+
+                    <!-- Search bar -->
+                    <div
+                        class="p-2 rounded-full flex space-x-2 items-center border-solid border-gray-200 border-2 shadow-lg">
+                        <i class='bx bx-search align-middle text-md text-gray-500'></i>
+                        <input type="text" placeholder="Search"
+                            class="w-64 focus:outline-none placeholder:text-sm text-gray-500 bg-transparent text-sm">
+                    </div>
+
+                    <!-- Notification Bell -->
+                    <i id="bell" class='bx bx-bell text-xl text-color2 cursor-pointer'></i>
+                </div>
+                <div class="flex md:hidden">
+                    <div class="md:hidden flex items-center">
+                        <i class='bx bx-search align-middle text-lg text-gray-500 hover:text-color1'></i>
+                    </div>
+                    <div class="flex items-center md:hidden ml-4">
+                        <i class='bx bxs-bell align-middle text-2xl cursor-pointer text-color2 hover:text-color1'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="flex w-full">
+                <div class="flex space-x-1 p-1 md:p-2 items-center md:space-x-9">
+
+                    <!-- Layout Menu-->
+                    <div class="flex">
+                        <div class="p-1">
+                            <i
+                                class='bx bxs-layout align-middle text-xl cursor-pointer hover:text-color1 md:text-3xl'></i>
+                        </div>
+                        <div class="p-1">
+                            <i
+                                class='bx bx-list-ul align-middle text-xl cursor-pointer hover:text-color1 md:text-3xl'></i>
+                        </div>
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="flex space-x-1">
+                        <h3 class="text-xs text-gray-400 font-normal md:text-sm">Sort by: </h3>
+                        <div class="flex space-x-1 items-center">
+                            <h3 class="text-xs text-gray-400 font-normal md:text-sm">None</h3>
+                            <i class='bx bxs-chevron-down hover:text-color1'></i>
+                        </div>
+                    </div>
+
+                    <!-- Type  -->
+                    <div class="flex space-x-1">
+                        <h3 class="text-xs text-gray-400 font-normal md:text-sm">Type:</h3>
+                        <div class="flex space-x-1 items-center">
+                            <h3 class="text-xs text-gray-400 font-normal md:text-sm">None</h3>
+                            <i class='bx bxs-chevron-down hover:text-color1'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses List -->
+    <section id="coursesList">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div
+                class="relative bg-[url('./img/cb1.png')] cursor-pointer justify-self-center place-content-center transiton ease-in duration-150 hover:shadow-lg hover:shadow-gray-500 c1 rounded-3xl h-64 px-8 pt-8 mb-8 pb-24 flex flex-col w-72 bg-red-400">
+                <h2 class="text-sm font-semibold text-color1 mb-5">COURSE 1</h2>
+                <h1 class="text-4xl font-bold text-black mb-2">HTML</h1>
+                <p class="text-xs font-medium text-gray-500 mb-10">32 lessons</p>
+                <img src="./img/c1.png" alt="" class="absolute w-36 bottom-0 right-8">
+            </div>
+            <div
+                class="c2 relative  bg-[url('./img/cb2.png')] cursor-pointer justify-self-center rounded-3xl transiton ease-in duration-150 hover:shadow-lg hover:shadow-gray-500 h-64 px-8 mb-8 pt-8 pb-24 flex flex-col w-72 bg-green-400">
+                <h2 class="text-sm font-semibold text-color1 mb-5">COURSE 2</h2>
+                <h1 class="text-4xl font-bold text-black mb-2">CSS</h1>
+                <p class="text-xs font-medium text-gray-500 mb-10">24 lessons</p>
+                <img src="./img/c2.png" alt="" class="absolute w-36 bottom-0 right-8">
+            </div>
+
+            <div
+                class="c3 relative bg-[url('./img/cb3.png')] justify-self-center cursor-pointer rounded-3xl h-64 px-8 pt-8 mb-8 transiton ease-in duration-150 hover:shadow-lg hover:shadow-gray-500 pb-24 flex flex-col w-72 bg-purple-400">
+                <h2 class="text-sm font-semibold text-color1 cursor-pointer mb-5">COURSE 3</h2>
+                <h1 class="text-4xl font-bold text-black mb-2">TAILWIND CSS</h1>
+                <p class="text-xs font-medium text-gray-500 mb-10">15 lessons</p>
+                <img src="./img/c3.png" alt="" class="absolute w-36 bottom-0 right-8">
+            </div>
+
+            <div
+                class="c4 relative bg-[url('./img/cb4.png')] justify-self-center cursor-pointer rounded-3xl h-64 px-8 pt-8 mb-8 transiton ease-in duration-150 hover:shadow-lg hover:shadow-gray-500 pb-24 flex flex-col w-72 bg-blue-400">
+                <h2 class="text-sm font-semibold text-color1 mb-5">COURSE 4</h2>
+                <h1 class="text-4xl font-bold text-black mb-2">JAVASCRIPT</h1>
+                <p class="text-xs font-medium text-gray-500 mb-10">55 lessons</p>
+                <img src="./img/c4.png" alt="" class="absolute w-32 bottom-0 right-8">
+            </div>
+
+            <div
+                class="c5 relative bg-[url('./img/cb4.png')] justify-self-center cursor-pointer rounded-3xl h-64 px-8 pt-8 mb-8 transiton ease-in duration-150 hover:shadow-lg hover:shadow-gray-500 pb-24 flex flex-col w-72 bg-blue-400">
+                <h2 class="text-sm font-semibold text-color1 mb-5">COURSE 5</h2>
+                <h1 class="text-4xl font-bold text-black mb-2">PYTHON</h1>
+                <p class="text-xs font-medium text-gray-500 mb-10">45 lessons</p>
+                <img src="./img/c5.png" alt="" class="absolute w-32 bottom-0 right-8">
+            </div>
+
+            <div
+                class="c6 relative bg-[url('./img/cb3.png')] justify-self-center cursor-pointer rounded-3xl h-64 px-8 pt-8 mb-8 transiton ease-in duration-150 hover:shadow-lg hover:shadow-gray-500 pb-24 flex flex-col w-72 bg-purple-400">
+                <h2 class="text-sm font-semibold text-color1 mb-5">COURSE 6</h2>
+                <h1 class="text-4xl font-bold text-black mb-2">PHP</h1>
+                <p class="text-xs font-medium text-gray-500 mb-10">49 lessons</p>
+                <img src="./img/c6.png" alt="" class="absolute w-32 bottom-0 right-8">
+            </div>
+
+            <div
+                class="c7 relative bg-[url('./img/cb2.png')] justify-self-center cursor-pointer rounded-3xl h-64 px-8 pt-8 mb-8 transiton ease-in duration-150 hover:shadow-lg hover:shadow-gray-500 pb-24 flex flex-col w-72 bg-green-400">
+                <h2 class="text-sm font-semibold text-color1 mb-5">COURSE 7</h2>
+                <h1 class="text-4xl font-bold text-black mb-2">C++</h1>
+                <p class="text-xs font-medium text-gray-500 mb-10">83 lessons</p>
+                <img src="./img/c7.png" alt="" class="absolute w-32 bottom-0 right-8">
+            </div>
+
+            <div
+                class="c8 relative bg-[url('./img/cb1.png')] justify-self-center cursor-pointer rounded-3xl h-64 px-8 pt-8 pb-24 transiton ease-in duration-150 hover:shadow-lg hover:shadow-gray-500 mb-8 flex flex-col w-72 bg-red-400">
+                <h2 class="text-sm font-semibold text-color1 mb-5">COURSE 8</h2>
+                <h1 class="text-4xl font-bold text-black mb-2">JAVA</h1>
+                <p class="text-xs font-medium text-gray-500 mb-10">75 lessons</p>
+                <img src="./img/c8.png" alt="" class="absolute w-32 bottom-2 right-8">
+            </div>
+
+            <div
+                class="relative bg-[url('./img/cb1.png')] cursor-pointer justify-self-center place-content-center transiton ease-in duration-150 hover:shadow-lg hover:shadow-gray-500 c1 rounded-3xl h-64 px-8 pt-8 mb-8 pb-24 flex flex-col w-72 bg-red-400">
+                <h2 class="text-sm font-semibold text-color1 mb-5">COURSE 9</h2>
+                <h1 class="text-4xl font-bold text-black mb-2">Coming Soon</h1>
+                <p class="text-xs font-medium text-gray-500 mb-10">0 lessons</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative w-full pt-40 pb-16 bg-black md:pl-80 md:mt-24">
+        <div
+            class="hidden w-4/6 p-10 rounded-lg justify-between bg-color1 absolute -top-16 left-1/2 -translate-x-1/2 md:flex ">
+            <div class="flex flex-col space-y-3">
+                <h1 class="text-2xl text-white font-bold">Ready to get Started</h1>
+                <p class="text-sm text-gray-300 font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <a href="signin.html"
+                class="rounded-md text-sm text-gray-600 font-medium cursor-pointer w-fit p-3 self-center bg-gray-100 hover:bg-gray-300">
+                Get Started
+            </a>
+        </div>
+        <div
+            class="absolute rounded-md top-16 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center md:top-28 md:left-28 md:translate-x-0 p-3">
+            <img class="w-16" src="./img/logo.png" alt="">
+            <p class="text-xs text-gray-400 font-normal md:text-sm">Coyright @2023 NatMin</p>
+        </div>
+        <div class="relative grid grid-cols-2 md:grid-cols-4">
+            <div class="flex flex-col items-end pr-10 md:items-start">
+                <h1 class="text-xl font-semibold text-white mb-2">About</h1>
+                <p class="text-sm cursor-pointer text-gray-400">Contact Us</p>
+                <p class="text-sm cursor-pointer text-gray-400">About Us</p>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="text-xl font-semibold text-white mb-2">Quick Links</h1>
+                <p class="text-sm cursor-pointer text-gray-400">Facebook</p>
+                <p class="text-sm cursor-pointer text-gray-400">Twitter</p>
+                <p class="text-sm cursor-pointer text-gray-400">Instagram</p>
+                <p class="text-sm cursor-pointer text-gray-400">Linkedin</p>
+                <p class="text-sm cursor-pointer text-gray-400">Pinterest</p>
+            </div>
+            <div class="flex flex-col pr-10 items-end md:items-start">
+                <h1 class="text-xl font-semibold text-white mb-2">Our Service</h1>
+                <p class="text-sm cursor-pointer text-gray-400">HTML</p>
+                <p class="text-sm cursor-pointer text-gray-400">CSS</p>
+                <p class="text-sm cursor-pointer text-gray-400">TAILWIND</p>
+                <p class="text-sm cursor-pointer text-gray-400">C++</p>
+                <p class="text-sm cursor-pointer text-gray-400">OTHERS</p>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="text-xl font-semibold text-white mb-2">Policy</h1>
+                <p class="text-sm cursor-pointer text-gray-400">Return Policy</p>
+                <p class="text-sm cursor-pointer text-gray-400">Terms of use</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

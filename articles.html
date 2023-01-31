@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - NatMin EDU</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Lora Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Boxicons CDN-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+</head>
+
+<body class="bg-slate-100">
+    <!-- Nav Bar -->
+    <nav class="relative container p-6 mx-auto">
+        <div class="flex justify-between items-center">
+            <a href="index.html"><img class=" w-20 md:w-24" src="./img/logo.png" alt=""></a>
+            <div class="hidden md:flex space-x-6">
+                <a class="font-bold text-sm text-gray-500 hover:text-color1" href="index.html">Home</a>
+                <a class="font-bold text-sm text-gray-500" href="courses.html">Courses</a>
+                <a class="font-bold text-sm text-gray-500 hover:text-color1" href="teachers.html">Teachers</a>
+                <a class="font-bold text-sm text-black hover:text-color1" href="articles.html">Articles</a>
+                <a class="font-bold text-sm text-gray-500 hover:text-color1" href="about.html">About</a>
+            </div>
+            <a class="hidden md:block px-6 py-3 rounded-full bg-color1 text-xs text-white hover:bg-colorhover1 "
+                href="signin.html">Get Started</a>
+            <div id="menu" class="md:hidden cursor-pointer">
+                <i class='bx bx-menu text-2xl'></i>
+            </div>
+            <div id="menu-items" class="hidden absolute h-screen py-3 top-0 right-0 flex-col space-y-3 bg-color1 z-40">
+                <div class="flex justify-end pr-2">
+                    <i id="x-button" class='bx bx-x text-2xl cursor-pointer'></i>
+                </div>
+                <div class="flex flex-col space-y-3 pl-6 pr-20">
+                    <a href="index.html" class="text-md border-b border-b-gray-200 text-gray-700 font-medium">Home</a>
+                    <a href="courses.html"
+                        class="text-md border-b border-b-gray-200 text-gray-700 font-medium">Courses</a>
+                    <a href="teachers.html"
+                        class="text-md border-b border-b-gray-200 text-gray-700 font-medium">Teachers</a>
+                    <a href="articles.html"
+                        class="text-md border-b border-b-gray-200 text-gray-700 font-medium">Articles</a>
+                    <a href="about.html" class="text-md border-b border-b-gray-200 text-gray-700 font-medium">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="articles">
+        <div class="container p-6 flex flex-col mx-auto md:mb-32">
+            <div class="w-full">
+                <h1 class="text-gray-600 text-font-semibold text-2xl md:text-4xl">Featured Articles</h1>
+            </div>
+
+            <!-- Articles List -->
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 md:mt-14">
+                <div class="flex flex-col mb-5 justify-self-center h-72 space-y-4 shadow-md w-5/6 md:w-4/6">
+                    <img src="./img/articles1.jpg" alt="" class="w-full object-cover h-1/3">
+                    <a href="https://www.solodev.com/blog/web-design/adding-recent-news-boxes-to-your-website.stml"
+                        class="text-md pl-3 text-color-600 cursor-pointer font-medium hover:underline">Adding Recent
+                        News Boxes to Your Website</a>
+                    <p class="text-xs px-3 text-color-400 font-light">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quis placeat incidunt quos voluptate vel ad rerum quasi dolorum voluptatem quaerat?</p>
+                    <h3 class="text-xs px-3 text-color2 font-medium">HTML</h3>
+                </div>
+
+                <div class="flex flex-col mb-5 justify-self-center h-72 space-y-4 shadow-md w-5/6 md:w-4/6">
+                    <img src="./img/article2.png" alt="" class="w-full object-cover h-1/3">
+                    <a href="https://uxdesign.cc/basic-css-animations-9c10d7eb1b1b"
+                        class="text-md pl-3 text-color-600 cursor-pointer font-medium hover:underline">
+                        Experimenting with basic CSS animations
+                    </a>
+                    <p class="text-xs px-3 text-color-400 font-light">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Repellat aut esse, unde necessitatibus eos totam voluptatum velit maxime saepe
+                        eligendi nulla libero!</p>
+                    <h3 class="text-xs pl-3 text-color2 font-medium">CSS</h3>
+                </div>
+
+                <div class="flex flex-col mb-5 justify-self-center h-72 space-y-4 shadow-md w-5/6 md:w-4/6">
+                    <img src="./img/articles3.jpg" alt="" class="w-full object-cover h-1/3">
+                    <a href="https://codeflarelimited.com/blog/build-a-news-app-with-javascript-es6/"
+                        class="text-md px-3 text-color-600 cursor-pointer font-medium hover:underline">Build a News App
+                        With Javascript ES6</a>
+                    <p class="text-xs pl-3 text-color-400 font-light">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Minima praesentium ipsam consequuntur quae hic placeat odio rem quasi!</p>
+                    <h3 class="text-xs px-3 text-color2 font-medium">JAVASCRIPT</h3>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative w-full pt-40 pb-16 bg-black md:pl-80">
+        <div
+            class="hidden w-4/6 p-10 rounded-lg justify-between bg-color1 absolute -top-16 left-1/2 -translate-x-1/2 md:flex ">
+            <div class="flex flex-col space-y-3">
+                <h1 class="text-2xl text-white font-bold">Ready to get Started</h1>
+                <p class="text-sm text-gray-300 font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <a href="signin.html"
+                class="rounded-md text-sm text-gray-600 font-medium cursor-pointer w-fit p-3 self-center bg-gray-100 hover:bg-gray-300">
+                Get Started
+            </a>
+        </div>
+        <div
+            class="absolute rounded-md top-16 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center md:top-28 md:left-28 md:translate-x-0 p-3">
+            <img class="w-16" src="./img/logo.png" alt="">
+            <p class="text-xs text-gray-400 font-normal md:text-sm">Coyright @2023 NatMin</p>
+        </div>
+        <div class="relative grid grid-cols-2 md:grid-cols-4">
+            <div class="flex flex-col items-end pr-10 md:items-start">
+                <h1 class="text-xl font-semibold text-white mb-2">About</h1>
+                <p class="text-sm cursor-pointer text-gray-400">Contact Us</p>
+                <p class="text-sm cursor-pointer text-gray-400">About Us</p>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="text-xl font-semibold text-white mb-2">Quick Links</h1>
+                <p class="text-sm cursor-pointer text-gray-400">Facebook</p>
+                <p class="text-sm cursor-pointer text-gray-400">Twitter</p>
+                <p class="text-sm cursor-pointer text-gray-400">Instagram</p>
+                <p class="text-sm cursor-pointer text-gray-400">Linkedin</p>
+                <p class="text-sm cursor-pointer text-gray-400">Pinterest</p>
+            </div>
+            <div class="flex flex-col pr-10 items-end md:items-start">
+                <h1 class="text-xl font-semibold text-white mb-2">Our Service</h1>
+                <p class="text-sm cursor-pointer text-gray-400">HTML</p>
+                <p class="text-sm cursor-pointer text-gray-400">CSS</p>
+                <p class="text-sm cursor-pointer text-gray-400">TAILWIND</p>
+                <p class="text-sm cursor-pointer text-gray-400">C++</p>
+                <p class="text-sm cursor-pointer text-gray-400">OTHERS</p>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="text-xl font-semibold text-white mb-2">Policy</h1>
+                <p class="text-sm cursor-pointer text-gray-400">Return Policy</p>
+                <p class="text-sm cursor-pointer text-gray-400">Terms of use</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
